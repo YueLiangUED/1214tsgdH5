@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="full-screen" content="yes">
+        <meta name="x5-fullscreen" content="true">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-status-bar-style" content="black" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="format-detection" content="email=no" />
+        <title>天津电信微信客服</title>
+        <script type="text/javascript">
+            (function (global) {
+                function remChange() {
+                    document.documentElement.style.fontSize = 100 * document.documentElement.clientWidth / 750 + 'px';
+                }
+                remChange();
+                global.addEventListener('resize', remChange, false);
+            })(window);
+        </script>
+        <link rel="stylesheet" href="css/reset.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/mobiscroll_date.css" />
+        <link rel="stylesheet" type="text/css" href="css/mobiscroll.css" />
+        <script src="js/jquery-1.10.1.min.js"></script>
+        <script type="text/javascript" src="js/mobiscroll_date.js"></script>
+        <script type="text/javascript" src="js/mobiscroll.js"></script>
+    </head>
+    <body>
+        <div class="view-wrapper">
+            <div class="navigationbar flex justify-between">
+                <a class="return-btn" href=""><i></i>返回</a>
+            </div>
+            <div class="tab-btns">
+                <ul>
+                    <li class="act">工单查询</li>
+                    <li>我的工单</li>
+                    <li>投诉建议</li>
+                </ul>
+            </div>
+            <div class="tab-container">
+                <div class="tab-content" style="">
+                    <h3 class="tab-content-h3" style="margin-bottom: 0.5rem;">请输入您要查询工单的如下信息：</h3>
+                    <div class="form-group">
+                        <div class="form-title">受理时间：</div>
+                        <div class="form-content">
+                            <input class="input-m dataStart" type="text" readonly onfocus="this.blur();" /><span style="margin: 0 0.1rem;">至</span><input class="input-m dataEnd" type="text" readonly onfocus="this.blur();" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-title">受理号码：</div>
+                        <div class="form-content">
+                            <input class="input-b" type="tel" />
+                        </div>
+                    </div>
+                    <div class="form-group radio">
+                        <div class="form-group-radio">
+                            <input class="validateMessage act" checked id="validateMessage" type="radio" name="validateWay" />
+                            <label for="validateMessage">短信验证</label>
+                        </div>
+                        <div class="form-group-radio">
+                            <input class="validatePassword" id="validatePassword" type="radio" name="validateWay" />
+                            <label for="validatePassword">服务密码验证</label>
+                        </div>
+                    </div>
+                    <div class="form-group get-num-group">
+                        <div class="form-title" style="letter-spacing: 3px;">验证码：</div>
+                        <div class="form-content flex align-center">
+                            <input class="input-m" type="tel" /><button class="getNumBtn" type="button">获取验证码</button>
+                        </div>
+                    </div>
+                    <div class="form-group password-group" style="display: none;">
+                        <div class="form-title">服务密码：</div>
+                        <div class="form-content">
+                            <input class="input-m" type="tel" />
+                        </div>
+                    </div>
+                    <p class="form-tip">提示：请将内容填写完整再进行查询</p>
+                    <input class="query-btn" type="button" value="查询" />
+                    <h3 class="tab-content-h3" style="margin-bottom: 0.4rem;">请输入您要查询工单的如下信息：</h3>
+                    <div class="queryResult-container">
+                        <div class="queryResult-group">
+                            <div class="queryResult-title">
+                                受理时间：
+                            </div>
+                            <div class="queryResult-content">
+                                <span class="font-blue">2017年7月6号</span>
+                            </div>
+                        </div>
+                        <div class="queryResult-group">
+                            <div class="queryResult-title">
+                                投诉单号：
+                            </div>
+                            <div class="queryResult-content">
+                                <span class="font-blue">2738636</span>
+                            </div>
+                        </div>
+                        <div class="queryResult-group" style="margin-bottom: 0.3rem;">
+                            <div class="queryResult-title">
+                                投诉内容：
+                            </div>
+                            <div class="queryResult-content">
+                                <span>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</span>
+                            </div>
+                        </div>
+                        <div class="queryResult-group flex align-end">
+                            <div class="queryResult-title">
+                                处理进程：
+                            </div>
+                            <div class="queryResult-content">
+                                <div class="status-container">
+                                    <div class="status-solid"></div>
+                                    <div class="status-content">
+                                        <div class="status-item notfinish">
+                                            <span class="status-item-text">未完成</span>
+                                            <i class="status-item-dot"></i>
+                                        </div>
+                                        <div class="status-item finish act">
+                                            <span class="status-item-text">已完成</span>
+                                            <i class="status-item-dot"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content" style="display: none;">
+                    <h3 class="tab-content-h3" style="margin-bottom: 0.4rem;">您的<span class="font-blue">182222808343</span>号码在途投诉工单如下：</h3>
+                    <div class="queryResult-container">
+                        <div class="queryResult-group">
+                            <div class="queryResult-title">
+                                受理时间：
+                            </div>
+                            <div class="queryResult-content">
+                                <span class="font-blue">2017年7月6号</span>
+                            </div>
+                        </div>
+                        <div class="queryResult-group">
+                            <div class="queryResult-title">
+                                投诉单号：
+                            </div>
+                            <div class="queryResult-content">
+                                <span class="font-blue">2738636</span>
+                            </div>
+                        </div>
+                        <div class="queryResult-group" style="margin-bottom: 0.3rem;">
+                            <div class="queryResult-title">
+                                投诉内容：
+                            </div>
+                            <div class="queryResult-content">
+                                <span>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</span>
+                            </div>
+                        </div>
+                        <div class="queryResult-group flex align-end">
+                            <div class="queryResult-title">
+                                处理进程：
+                            </div>
+                            <div class="queryResult-content">
+                                <div class="status-container">
+                                    <div class="status-solid"></div>
+                                    <div class="status-content">
+                                        <div class="status-item notfinish">
+                                            <span class="status-item-text">正在处理</span>
+                                            <i class="status-item-dot"></i>
+                                        </div>
+                                        <div class="status-item finish act">
+                                            <span class="status-item-text">处理完成</span>
+                                            <i class="status-item-dot"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="queryResult-container">
+                        <div class="queryResult-group">
+                            <div class="queryResult-title">
+                                受理时间：
+                            </div>
+                            <div class="queryResult-content">
+                                <span class="font-blue">2017年7月6号</span>
+                            </div>
+                        </div>
+                        <div class="queryResult-group">
+                            <div class="queryResult-title">
+                                投诉单号：
+                            </div>
+                            <div class="queryResult-content">
+                                <span class="font-blue">2738636</span>
+                            </div>
+                        </div>
+                        <div class="queryResult-group" style="margin-bottom: 0.3rem;">
+                            <div class="queryResult-title">
+                                投诉内容：
+                            </div>
+                            <div class="queryResult-content">
+                                <span>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</span>
+                            </div>
+                        </div>
+                        <div class="queryResult-group flex align-end">
+                            <div class="queryResult-title">
+                                处理进程：
+                            </div>
+                            <div class="queryResult-content">
+                                <div class="status-container">
+                                    <div class="status-solid"></div>
+                                    <div class="status-content">
+                                        <div class="status-item notfinish">
+                                            <span class="status-item-text">正在处理</span>
+                                            <i class="status-item-dot"></i>
+                                        </div>
+                                        <div class="status-item finish act">
+                                            <span class="status-item-text">处理完成</span>
+                                            <i class="status-item-dot"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="queryResult-container">
+                        <div class="queryResult-group">
+                            <div class="queryResult-title">
+                                受理时间：
+                            </div>
+                            <div class="queryResult-content">
+                                <span class="font-blue">2017年7月6号</span>
+                            </div>
+                        </div>
+                        <div class="queryResult-group">
+                            <div class="queryResult-title">
+                                投诉单号：
+                            </div>
+                            <div class="queryResult-content">
+                                <span class="font-blue">2738636</span>
+                            </div>
+                        </div>
+                        <div class="queryResult-group" style="margin-bottom: 0.3rem;">
+                            <div class="queryResult-title">
+                                投诉内容：
+                            </div>
+                            <div class="queryResult-content">
+                                <span>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</span>
+                            </div>
+                        </div>
+                        <div class="queryResult-group flex align-end">
+                            <div class="queryResult-title">
+                                处理进程：
+                            </div>
+                            <div class="queryResult-content">
+                                <div class="status-container">
+                                    <div class="status-solid"></div>
+                                    <div class="status-content">
+                                        <div class="status-item notfinish">
+                                            <span class="status-item-text">正在处理</span>
+                                            <i class="status-item-dot"></i>
+                                        </div>
+                                        <div class="status-item finish act">
+                                            <span class="status-item-text">处理完成</span>
+                                            <i class="status-item-dot"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content" style="display: none;">
+                    <h3 class="tab-content-h3" style="margin-bottom: 0.5rem;">请输入您要查询工单的如下信息：</h3>
+                    <div class="form-group">
+                        <div class="form-title">问题号码：</div>
+                        <div class="form-content">
+                            <input class="input-b" type="tel" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-title" style="letter-spacing: 3px;">联系人：</div>
+                        <div class="form-content">
+                            <input class="input-m" type="text" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-title">联系电话：</div>
+                        <div class="form-content">
+                            <input class="input-m" type="tel" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-title">投诉主题：</div>
+                        <div class="form-content">
+                            <input class="input-m" type="text" />
+                        </div>
+                    </div>
+                    <div class="form-group" style="margin-bottom: 0.5rem;">
+                        <textarea class="form-group-textarea" placeholder="请输入您要投诉问题的具体情况"></textarea>
+                    </div>
+                    <p class="form-tip">提示：请将内容填写完整再进行查询</p>
+                    <input class="query-btn" type="button" value="查询" />
+                </div>
+            </div>
+            <div class="wx-tip-container">
+                <div class="wx-tip">
+                    <div class="wx-tip-title">
+                        温馨提示
+                    </div>
+                    <div class="wx-tip-content" data-isopen="false">
+                        基本信用额度是中国电信根据您的通信消费行为提供的通信费用透支服务，可确保您在余额不足且不方便缴费的情况下延时停机。基本信用额度是中国电信根据您的通信消费行为提供的通信费用透支服务，可确保您在余额不足且不方便缴费的情况下延时停机。基本信用额度是中国电信根据您的通信消费行为提供的通信费用透支服务，可确保您在余额不足且不方便缴费的情况下延时停机。基本信用额度是中国电信根据您的通信消费行为提供的通信费用透支服务，可确保您在余额不足且不方便缴费的情况下延时停机。
+                    </div>
+                    <div class="open-btn"><span>展开&nbsp;+</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="mask" style="display: none;"></div>
+        <div class="modal" style="display: none;">
+            <div class="flex justify-center align-center" style="height: 100%;">
+                <div class="modal-content">
+                    <div class="modal-title">
+                        温馨提示
+                    </div>
+                    <div class="modal-body">
+                        <div style="padding-top: 0.25rem;">
+                            查询不到该工单<br />请确认信息正确后再进行查询
+                        </div>
+                        <span class="modal-enter">确定</span>
+                    </div>
+                    <div class="modal-close"></div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" style="display: none;">
+            <div class="flex justify-center align-center" style="height: 100%;">
+                <div class="modal-content">
+                    <div class="modal-body" style="border-radius: 8px;">
+                        <div class="modal-num-container">
+                            <p class="modal-num-title">请输入下面图形的验证码</p>
+                            <input class="modal-num-input" type="text" />
+                            <div class="modal-num-box">
+                                <div class="modal-num">FDBC</div>
+                                <span class="modal-num-change">看不清，换一张</span>
+                            </div>
+                        </div>
+                        <div class="modal-num-tip">请输入正确的验证码</div>
+                        <span class="modal-submit">提交</span>
+                    </div>
+                    <div class="modal-close"></div>
+                </div>
+            </div>
+        </div>
+        <script src="js/index.js"></script>
+    </body>
+</html>
